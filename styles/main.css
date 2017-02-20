@@ -1,5 +1,6 @@
 body {
     font-family: "Myriad Pro", Myriad, sans-serif;
+    line-height: 0.9;
     color: #333333;
     height: 2000px;
 }
@@ -19,6 +20,7 @@ h2, h3 {
 }
 
 .page {
+    box-sizing: border-box;
     position: absolute;
     width: 520px;
     padding: 20px 30px;
@@ -61,9 +63,51 @@ h2, h3 {
     background-color: #ebebeb;
 }
 
-.left-image {
+.front p {
+    font-size: 14px;
+}
+
+article .left-image {
     float: left;
     margin: 0 20px 20px 0;
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+.front .small {
+    text-align: center;
+    font-size: 10px;
+}
+
+.row:not(:first-child) {
+    margin-top: 14px;
+}
+
+.clearfix::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.jokes {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.joke {
+    width: 195px;
+    height: 90px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 .share {
